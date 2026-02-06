@@ -2,7 +2,7 @@
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title>Ton Plus Miner</title>
+    <title>Ton Dropy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Telegram WebApp -->
@@ -44,7 +44,7 @@
 
 <body>
 
-    <h2>⛏ Ton Plus Miner</h2>
+    <h2>⛏ Ton Dropy</h2>
 
     <div class="card">
         <p>💰 موجودی: <span id="balance">12.86</span> TON</p>
@@ -90,7 +90,7 @@ setInterval(() => {
 
 /* ================= TON CONNECT ================= */
 const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
-    manifestUrl: 'https://nimwmesfandiari.github.io/ton-plus-bot/tonconnect-manifest.json',
+    manifestUrl: 'https://nimwmesfandiari.github.io/ton-dropy-bot/tonconnect-manifest.json',
     buttonRootId: 'connectBtn'
 });
 
@@ -126,10 +126,10 @@ function withdraw() {
 
 /* ================= STORAGE ================= */
 function saveLocal() {
-    localStorage.setItem("ton_plus_user", JSON.stringify(userData));
+    localStorage.setItem("ton_dropy_user", JSON.stringify(userData));
 }
 
-const saved = localStorage.getItem("ton_plus_user");
+const saved = localStorage.getItem("ton_dropy_user");
 if (saved) {
     userData = JSON.parse(saved);
     if (userData.wallet) {
